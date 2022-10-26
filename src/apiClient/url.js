@@ -9,10 +9,10 @@ const url = {
         if ( kategori ) {
             searchKey += `&categories=${kategori}`
         }
-        return `http://api.mediastack.com/v1/news?access_key=370c0980aa1c97bb699dd6eb3a033aa9&languages=en&sources=fullcomment,bbc,cnn`+searchKey;
+        return `http://api.mediastack.com/v1/news?access_key=370c0980aa1c97bb699dd6eb3a033aa9&languages=en&sources=fullcoment`+searchKey;
     },
-    latestNews: 'http://api.mediastack.com/v1/news?access_key=370c0980aa1c97bb699dd6eb3a033aa9&languages=en&sources=fullcomment,cnn,bbc&offset=0&limit=3',
-    popularNews: 'http://api.mediastack.com/v1/news?access_key=370c0980aa1c97bb699dd6eb3a033aa9&languages=en&sources=fullcomment,cnn,bbc&offset=0&limit=3&sort=popularity'
+    latestNews: 'http://api.mediastack.com/v1/news?access_key=370c0980aa1c97bb699dd6eb3a033aa9&languages=en&sources=fullcomment&offset=0&limit=3',
+    popularNews: 'http://api.mediastack.com/v1/news?access_key=370c0980aa1c97bb699dd6eb3a033aa9&languages=en&sources=fullcomment&offset=0&limit=3&sort=popularity'
 }
 
 export default url
