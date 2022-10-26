@@ -12,6 +12,9 @@ function reducer(state = { }, action) {
         case 'login':
             state = { login: true }
             break;
+        case 'regis-done':
+            state = { regis: false }
+            break;
         default:
             break;
     }

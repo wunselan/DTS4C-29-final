@@ -27,6 +27,7 @@ export const LoginPage = () => {
   // Alert ketika berhasil register
   const state = useSelector((state) => state);
   if ( state.regis ) {
+    dispatch({type: 'regis-done'});
     Toast.fire({
       icon: 'success',
       title: 'Register berhasil, silahkan login'

@@ -51,6 +51,15 @@ export const HomePage = () => {
         });
     }, [])
 
+    const [contentCount, setContentCount] = useState(null)
+    useEffect(() => {
+        api.GetNews()
+        .then(res => {
+            setContentCount(res);
+            return;
+        });
+    }, [])
+
     return (
         <>
             <Header />
@@ -67,7 +76,7 @@ export const HomePage = () => {
                     <Card.Body>
                         <Row className='justify-content-center text-center'>
                             <Col sm={6}>
-                                <h3 className='fw-bold'>20</h3>
+                                <h3 className='fw-bold'>{contentCount && contentCount.data && contentCount.data.pagination && contentCount.data.pagination.total}</h3>
                                 <h4>Berita</h4>
                             </Col>
                             <Col sm={6}>

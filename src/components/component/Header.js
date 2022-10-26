@@ -65,7 +65,7 @@ export const Header = () => {
                         <Nav className="mx-auto gap-4">
                             <Nav.Link href="/">Home</Nav.Link>
                             <Nav.Link href="/news">Daftar Berita</Nav.Link>
-                            <Nav.Link href="/">Tentang WP News</Nav.Link>
+                            <Nav.Link href="/tentang-kami">Tentang WP News</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
