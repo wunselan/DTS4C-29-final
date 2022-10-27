@@ -20,7 +20,7 @@ Branch dapat sesuai dengan kebutuhan dan kesepakatan bersama dalam pair, namun h
 
 Masukkan hal berikut ke dalam README.md project kalian:
     Video dokumentasi (semua fitur aplikasi) berdurasi kurang dari 60 detik dan di convert dalam bentuk GIF
-    
+    https://user-images.githubusercontent.com/17670188/198174751-fc2558ea-9781-4026-b9ce-b7bd17179501.mp4
 
     Link live app
     - http://wunsprim-news.herokuapp.com/login
