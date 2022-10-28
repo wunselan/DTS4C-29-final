@@ -47,7 +47,7 @@ export const Header = () => {
                         </Col>
                         <Col sm={12} lg={4} className="my-auto pb-2 pb-lg-0">
                             <Navbar.Brand href="/" className='fw-bold'>
-                            <img className='m-auto me-2' src={newsLogo} alt="News Logo" style={{ width: '10%' }} />
+                            <img className='m-auto me-2' src={newsLogo} alt="News Logo" style={{ width: '20%' }} />
                             </Navbar.Brand>
                         </Col>
                         <Col sm={12} lg={4} className="my-auto pb-2 pb-lg-0">

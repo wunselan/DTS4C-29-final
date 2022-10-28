@@ -11,7 +11,15 @@ import imgProfile from '../../assets/img/wunsel.jpg'
 import imgProfileDef from '../../assets/img/defaultProfile.jpg'
 
 export const TentangPage = () => {
+    // initiate
+    const navigate = useNavigate();
 
+    // Check if not login
+    useEffect(() => {
+        const isLogin = isLoggedIn();
+        if ( !isLogin ) navigate('/login');
+    }, [])
+    
     return (
         <>
             <Header />

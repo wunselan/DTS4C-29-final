@@ -6,8 +6,20 @@ import Masonry from 'react-masonry-css'
 import api from '../../apiClient'
 import { useEffect, useState } from "react"
 import Button from '../../components/component/Button'
+import { isLoggedIn } from "../../apiClient/authCheck"
+import { useNavigate } from "react-router-dom"
 
 export const NewsPage = () => {
+
+    // initiate
+    const navigate = useNavigate();
+
+    // Check if not login
+    useEffect(() => {
+        const isLogin = isLoggedIn();
+        if ( !isLogin ) navigate('/login');
+    }, [])
+    
 
     const [search, setSearch] = useState('');
     const [kategori, setKategori] = useState('');
@@ -101,7 +113,7 @@ export const NewsPage = () => {
                             >   
                                 {
                                     content && content.data && content.data.data.map(c => {
-                                       return <CardBerita title={c.title} image={c.image} category={c.category} description={c.description} url={c.url}  />
+                                       return <CardBerita title={c.title} image={c.image} category={c.category} description={c.description} url={c.url} size="16rem"  />
                                     })
                                 }
                                

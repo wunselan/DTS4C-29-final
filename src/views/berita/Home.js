@@ -103,7 +103,7 @@ export const HomePage = () => {
                     </Col>
                     {
                         content && content.data && content.data.data.map(c => {
-                            return <Col xs={6} sm={3} md={4} lg={2} xl={3}> <CardBerita title={c.title} image={c.image} category={c.category} description={c.description} url={c.url} /> </Col>
+                            return <Col xs={6} sm={3} md={4} lg={2} xl={3}> <CardBerita title={c.title} image={c.image} category={c.category} description={c.description} url={c.url} size='20rem' /> </Col>
                         })
                     }
                 </Row>
@@ -117,7 +117,7 @@ export const HomePage = () => {
                     </Col>
                     {
                         contentPopular && contentPopular.data && contentPopular.data.data.map(c => {
-                            return <Col xs={6} sm={3} md={4} lg={2} xl={3}> <CardBerita title={c.title} image={c.image} category={c.category} description={c.description} url={c.url} /> </Col>
+                            return <Col xs={6} sm={3} md={4} lg={2} xl={3}> <CardBerita title={c.title} image={c.image} category={c.category} description={c.description} url={c.url} size='20rem' /> </Col>
                         })
                     }
                 </Row>
